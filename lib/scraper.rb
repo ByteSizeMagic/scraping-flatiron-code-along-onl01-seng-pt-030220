@@ -24,8 +24,6 @@ class Scraper
     # binding.pry
   end
 
-  Scraper.new.print_courses
-
   def print_courses
     self.make_courses
     Course.all.each do |course|
@@ -36,5 +34,7 @@ class Scraper
       end
     end
   end
+
+  Scraper.new.print_courses
 
 end
